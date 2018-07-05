@@ -65,7 +65,9 @@ func initPlatDb(dbConf *conf.DbConf) (*gorm.DB, error) {
 	db.LogMode(dbConf.DbLogEnable)
 	db.SingularTable(true)
 
-	tables := []interface{}{}
+	tables := []interface{}{
+		&LeisureRoom{},
+	}
 
 	db = db.Set("gorm:table_options", "ENGINE=InnoDB").AutoMigrate(tables...)
 	for _, v := range tables {

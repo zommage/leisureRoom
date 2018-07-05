@@ -9,13 +9,13 @@ service LeisureRoomService {
 
 message NewRoomReq {
 	string username = 1;                                 // 用户名
-	string gameType = 2;                                 // 游戏类型
-	string roomName = 3;                                 // 房间名称                 
+	string gameCode = 2;                                 // 游戏code                                    
+	string roomName = 3;                                 // 房间名称  
+	string pwd = 4;                                      // 房间密码 
+	int32 siteNum = 5;                                   // 游戏人数            
 }
 
 message NewRoomResp {
-	string roomId = 1;                                   // 房间 id
-	string roomName = 2;                                 // 房间名称
-	int32  seatNum = 3;                                  // 座位数                  
+	string roomId = 1;                                   // 房间 id                
 }
 
