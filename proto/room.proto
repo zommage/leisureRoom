@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package proto;
+
+// Interface exported by the server.
+service LeisureRoomService {
+    rpc CreateRoom (NewRoomReq) returns (NewRoomResp) {}                               // 创建房间
+} 
+
+message NewRoomReq {
+	string username = 1;                                 // 用户名
+	string gameType = 2;                                 // 游戏类型
+	string roomName = 3;                                 // 房间名称                 
+}
+
+message NewRoomResp {
+	string roomId = 1;                                   // 房间 id
+	string roomName = 2;                                 // 房间名称
+	int32  seatNum = 3;                                  // 座位数                  
+}
+
