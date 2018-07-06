@@ -5,6 +5,7 @@ package proto;
 // Interface exported by the server.
 service LeisureRoomService {
     rpc CreateRoom (NewRoomReq) returns (NewRoomResp) {}                               // 创建房间
+	rpc AddRoom (AddRoomReq) returns (RoomNilResp) {}
 } 
 
 message NewRoomReq {
@@ -18,4 +19,14 @@ message NewRoomReq {
 message NewRoomResp {
 	string roomId = 1;                                   // 房间 id                
 }
+
+message AddRoomReq {
+	string roomId = 1;                                   // 房间 id   
+	string username = 2;                                 // 用户名
+	string pwd = 3;                                      // 房间密码              
+}
+
+message RoomNilResp {      
+}
+
 

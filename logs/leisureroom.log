@@ -6,3 +6,7 @@
 {"level":"info","ts":"2018-07-05T20:52:13.221+0800","caller":"models/dbbase.go:28","msg":"Init platform Db.............."}
 {"level":"info","ts":"2018-07-05T20:52:13.221+0800","caller":"leisureRoom/main.go:87","msg":"leisureRoom server is start"}
 {"level":"info","ts":"2018-07-05T20:52:16.880+0800","caller":"leisureRoom/main.go:97","msg":"leisureRoom server is down"}
+{"level":"info","ts":"2018-07-06T13:40:24.504+0800","caller":"models/dbbase.go:20","msg":"Init db.............."}
+{"level":"info","ts":"2018-07-06T13:40:25.488+0800","caller":"models/dbbase.go:28","msg":"Init platform Db.............."}
+{"level":"info","ts":"2018-07-06T13:40:25.488+0800","caller":"leisureRoom/main.go:87","msg":"leisureRoom server is start"}
+{"level":"info","ts":"2018-07-06T13:40:28.039+0800","caller":"leisureRoom/main.go:97","msg":"leisureRoom server is down"}
